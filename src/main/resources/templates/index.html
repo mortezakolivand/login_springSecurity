@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>M_Code</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand text-black" href="#page-top">M code</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                <li class="nav-item "><a class="nav-link text-black" href="#login">Login</a></li>
+                <li class="nav-item "><a class="nav-link text-black" href="#technologies">Technologies</a></li>
+                <li class="nav-item "><a class="nav-link text-black" href="#register">Register</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100"  >
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <h1 class="text-black font-weight-bold">Spring Framework</h1>
+                <hr class="divider" />
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <p class="text-black-75 mb-5">Implementing Spring Security</p>
+                <a class="btn btn-primary btn-xl" href="#register">Register</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Login-->
+<section class="page-section bg-primary" id="login">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">Login to your account</h2>
+                <hr class="divider divider-light" />
+                <a class="btn btn-light btn-xl" th:href="@{/login}">Sign in</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- technologies-->
+<section class="page-section" id="technologies">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Technologies</h2>
+        <hr class="divider" />
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Spring Framework</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Spring Security</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">My Sql</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi bi-lightning-charge fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Thymeleaf</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section class="page-section bg-dark text-white">-->
+<!--    <div class="container px-4 px-lg-5 text-center">-->
+<!--        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>-->
+<!--        <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>-->
+<!--    </div>-->
+<!--</section>-->
+<!-- Registration -->
+<!--<section class="page-section  backfooter " id="register">-->
+<!--    <div class="container px-4 px-lg-5"   >-->
+<!--        <div class="row gx-4 gx-lg-5 justify-content-center">-->
+<!--            <div class="col-lg-8 col-xl-6 text-center">-->
+<!--                <h2 class="mt-0 ">Registration</h2>-->
+<!--                <hr class="divider" />-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">-->
+<!--            <div class="col-lg-6">-->
+<!--&lt;!&ndash;                <form th:action="@{/process_register}" method="post" th:object="${user4}"&ndash;&gt;-->
+<!--&lt;!&ndash;                      style="max-width: 600px; margin:0 auto;" >&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash;                    <div class="m-3">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                        <div class="form-group row">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                            <label class="col-form-label col-4">Password</label>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                            <div class="col-8">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                                <input  type="password" class="form-control" th:field="*{password}" required&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                                        minlength="2" maxlength="20" />&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                            </div>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                        </div>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    </div>&ndash;&gt;&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <button type="submit" class="btn btn-primary">Sign Up</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </form>&ndash;&gt;-->
+<!--                <form id="contactForm" data-sb-form-api-token="API_TOKEN" th:action="@{/process_register}" method="post" th:object="${user}">-->
+<!--                    &lt;!&ndash; Email address input&ndash;&gt;-->
+<!--                    <div class="form-floating mb-3">-->
+<!--                        <input class="form-control" th:field="*{email}"  id="email1" type="email" placeholder="name@example.com" data-sb-validations="required,email" />-->
+<!--                        <input id="email1"   type="email" class="form-control" th:field="*{email}" required  />-->
+<!--                        <label for="email1">Email address</label>-->
+<!--                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>-->
+<!--                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>-->
+<!--                    </div>-->
+<!--&lt;!&ndash;                    Name input &ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="form-floating mb-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input class="form-control" th:field="*{firstName}" id="firstName" type="text" placeholder="Enter your first name..." data-sb-validations="required" />&ndash;&gt;-->
+<!--&lt;!&ndash;                        <label for="firstName">First Name</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="invalid-feedback" data-sb-feedback="firstName:required">First name is required.</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash; last name input&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="form-floating mb-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input class="form-control" th:field="*{lastName}"   id="lastName" type="text" placeholder="Enter your last name..." data-sb-validations="required" />&ndash;&gt;-->
+<!--&lt;!&ndash;                        <label for="lastName">Last Name</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="invalid-feedback" data-sb-feedback="lastName:required">Last name is required.</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash; Phone number input&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="form-floating mb-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input class="form-control" th:field="*{password}" id="password" type="password" data-sb-validations="required" />&ndash;&gt;-->
+<!--&lt;!&ndash;                        <label for="password">Password</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="invalid-feedback" data-sb-feedback="password:required">password is required.</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    &lt;!&ndash; Submit success message&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash;&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash; This is what your users will see when the form&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash; has successfully submitted&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="d-none" id="submitSuccessMessage">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="text-center mb-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="fw-bolder">Form submission successful!</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <br />&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="text-black" href="#login">Click here to login</a>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash; Submit error message&ndash;&gt;-->
+<!--                    &lt;!&ndash;&ndash;&gt;-->
+<!--                    &lt;!&ndash; This is what your users will see when there is&ndash;&gt;-->
+<!--                    &lt;!&ndash; an error submitting the form&ndash;&gt;-->
+<!--                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>-->
+<!--                    &lt;!&ndash; Submit Button&ndash;&gt;-->
+<!--                    <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>-->
+<!--                </form>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row gx-4 gx-lg-5 justify-content-center">-->
+<!--            <div class="col-lg-4 text-center mb-5 mb-lg-0">-->
+<!--                <i class="bi-phone fs-2 mb-3 text-muted"></i>-->
+<!--                <div>+1 (555) 123-4567</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!-- Contact-->
+<section class="page-section backfooter " id="register">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+                <h2 class="mt-0">Registration</h2>
+                <hr class="divider" />
+
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-6">
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN"
+                      th:action="@{/process_register}" method="post" th:object="${user}"
+                >
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control"  id="firstName" th:field="*{FirstName}"   type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                        <label for="firstName">First Name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>
+<!--                    last Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control"  id="lastName" th:field="*{LastName}" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                        <label for="lastName">Last Name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email"  th:field="*{email}" type="text" placeholder="name@example.com" data-sb-validations="required,email" />
+                        <label for="email">Email address</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                    </div>
+                    <!-- password-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="password"  th:field="*{password}" type="password" placeholder="name@example.com" data-sb-validations="required,email" />
+                        <label for="password">password</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                    </div>
+
+<!--                    <div class="d-none" id="submitSuccessMessage">-->
+<!--                        <div class="text-center mb-3">-->
+<!--                            <div class="fw-bolder">Form submission successful!</div>-->
+
+<!--                            <br />-->
+<!--                            <a class="text-black" href="#login">Click here to login</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>-->
+<!--                                        &lt;!&ndash; Submit Button&ndash;&gt;-->
+                                        <div class="d-grid"><button class="btn btn-primary btn-xl" id="submitButton" type="submit">Submit</button></div>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row gx-4 gx-lg-5 justify-content-center">
+                                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                                    <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                                    <div>+1 (555) 123-4567</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Footer-->
+<footer class="bg-light py-5">
+    <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - M_code </div></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- SimpleLightbox plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- * *                               SB Forms JS                               * *-->
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
